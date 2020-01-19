@@ -1,0 +1,115 @@
+.sidebar-parent {
+  height: 100%;
+  padding-top: 1em;
+  padding-bottom: 40px;
+  float: left;
+  width: 300px;
+  position: fixed;
+  overflow: scroll;
+  z-index: 1001;
+  background: #f2f3f7;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+
+  .author-info-parent {
+    width: 100%;
+
+    .author-img {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      .image {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+      }
+    }
+
+    .author-name {
+      font-weight: 700;
+      font-size: 30px;
+      margin-bottom: 0.5em;
+      display: block;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .author-email {
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 0.5em;
+      display: block;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .navigation-parent {
+    .navigation {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      min-height: 55px;
+      margin-bottom: 20px;
+      border: 1px solid transparent;
+
+      ul {
+        li {
+          margin: 0 0 10px 0;
+          padding: 0;
+          list-style: none;
+          font-size: 18px;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+
+          &.active {
+            a {
+              color: #2c98f0;
+            }
+          }
+
+          a {
+            color: rgba(0, 0, 0, 0.7);
+            text-decoration: none;
+            position: relative;
+            padding: 10px 0;
+            font-family: "Quicksand", Arial, sans-serif;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+
+            &:hover {
+              color: black;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .social-media {
+    li {
+      margin: 0 0 10px 0;
+      padding: 0;
+      list-style: none;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: center;
+
+      a {
+        color: black;
+        font-size: 25px;
+      }
+    }
+  }
+}
